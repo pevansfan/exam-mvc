@@ -187,3 +187,14 @@ button {
 .name-user {
     color: #0ef;
 }
+
+.title-group {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-group p span {
+    color: #0ef;
+}
