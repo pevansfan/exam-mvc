@@ -13,7 +13,7 @@
     <div class="containerT" style="display: flex; flex-direction: column;" id="app">
         <?= $data['content'] ?>
         <h1 class="title">Créer mon compte</h1>
-        <form action="/create" id="inscriptionForm" method="POST">
+        <form action="/createUser" id="inscriptionForm" method="POST">
             <div class="identity">
                 <div class="input-box">
                     <input type="text" name="lastname" required>
