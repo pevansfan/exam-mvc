@@ -17,7 +17,7 @@ class Blog extends Database
 
     public function addBlog(string $title, int $idUser)
     {
-        $dateCreated = date('Y-m-d H:i:s');
+        $dateCreated = date('Y-m-d H:i:s'); // Je récupère la date et l'heure d'aujourd'hui de la création avec la fonction date() au format Y-m-d H:i:s
         $sql = 'INSERT INTO blogs (title, created_at, id_users) VALUES (:title, :created_at, :id_users)';
         $stmt = $this->db->prepare($sql);
         $stmt->execute([

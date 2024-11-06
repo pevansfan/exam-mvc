@@ -1,6 +1,7 @@
 <?php
 ob_start();
 if ($data['form']) {
+    // Gestion des erreurs
     if (!empty($data['errors'])) { ?>
     <div class="alert alert-danger" id="myAlert">
         <ul>
@@ -9,7 +10,8 @@ if ($data['form']) {
             <?php endforeach; ?>
         </ul>
     </div>
-    <?php } else { ?>
+    <?php } else { 
+        // Message de succès ?>
         <div class="alert alert-success" id="myAlert">
             Votre compte a bien été créé ! <br>             
         </div>
@@ -17,6 +19,7 @@ if ($data['form']) {
 }
 $content = ob_get_clean();
 
+// J'afficherai les messages ou les erreurs en fonction des conditions ci-dessus dans le template index grâce à la fonction render
 render('inscription/index', [
     'content' => $content
 ], true);

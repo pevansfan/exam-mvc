@@ -1,4 +1,4 @@
 <?php
-session_destroy();
-header('Location: /login');
+session_destroy(); // Destruction de la session
+header('Location: /login'); // Redirection vers la page de connexion
 ?>

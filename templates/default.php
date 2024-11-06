@@ -15,12 +15,14 @@
 </head>
 
 <body>
+    <!-- NavBar -->
     <?php 
     require 'templates/ui/nav.php';
     ?>
 
     <div class="container">
         <ul class="list-group todos mx-auto text-light delete">
+            <!-- J'affiche ici les forums à partir de la view login -->
             <?= $data['content'] ?>
         </ul>
         <br>

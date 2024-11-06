@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Login Form using HTML CSS Only | Codehal</title>
+    <title>Connexion</title>
     <link rel="stylesheet" href="/assets/css/style_form.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
@@ -13,7 +13,7 @@
 <body>
     <div class="containerT" id="loginForm">
         <div class="login-box">
-            <?= $data['content'] ?>
+            <?= $data['content'] ?> <!-- J'affiche ici que les messages d'erreurs (puisque si je suis connecté, cela me redirige vers la page d'accueil) -->
 
             <h1>Se connecter</h1>
             <form action="/login" id="connexionForm" method="POST">
@@ -41,6 +41,7 @@
         </div>
     </div>
 
+    <!-- Script permettant de modifier la visibilité du mot de passe en modifiant le type de l'input -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const togglePassword = document.getElementById('togglePassword');

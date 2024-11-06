@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inscription</title>
     <link rel="stylesheet" href="/assets/css/style_form.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="containerT" style="display: flex; flex-direction: column;" id="app">
-        <?= $data['content'] ?>
+        <?= $data['content'] ?> <!-- J'affiche ici les messages d'erreurs et les messages de succès -->
         <h1 class="title">Créer mon compte</h1>
         <form action="/createUser" id="inscriptionForm" method="POST">
             <div class="identity">
